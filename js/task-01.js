@@ -4,6 +4,6 @@ console.log(`Number of categories: ${items.length}`);
 
 items.forEach((item) => {
   const title = item.firstElementChild.textContent;
-  const amount = item.lastElementChild.children.length;
+  const amount = item.lastElementChild.childElementCount;
   console.log(`Category: ${title}\nElements: ${amount}`);
 });
