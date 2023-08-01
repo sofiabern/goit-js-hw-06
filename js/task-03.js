@@ -14,7 +14,6 @@ const images = [
 ];
 
 const list = document.querySelector(".gallery");
-list.classList.add("img");
 
 const markup = images
   .map(({ url, alt }) => {
