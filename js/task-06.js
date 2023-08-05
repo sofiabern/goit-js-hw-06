@@ -7,7 +7,9 @@ function handlerCounter(evt) {
 
   if (amount === Number(evt.currentTarget.dataset.length)) {
     evt.currentTarget.classList.add("valid");
+    evt.currentTarget.classList.remove("invalid");
   } else {
     evt.currentTarget.classList.add("invalid");
+    evt.currentTarget.classList.remove("valid");
   }
 }
